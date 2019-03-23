@@ -11,7 +11,6 @@ sql = <<-SQL
   album TEXT
   )
 SQL
-binding.pry
 
 DB[:conn].execute(sql)
 DB[:conn].results_as_hash = true
